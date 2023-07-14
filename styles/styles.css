@@ -188,3 +188,162 @@ body {
   line-height: 40px;
   text-transform: uppercase;
 }
+
+/* catalog */
+
+.main-catalog {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.catalog {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 408px;
+  color: #ffffff;
+  background-image: url("../images/content/catalog-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.catalog__heading {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.breadcrumbs__link {
+  font-size: 16px;
+  line-height: normal;
+}
+
+.catalog-filter__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.catalog-filter__accept-button {
+  color: #ffffff;
+  background-color: #83b3d3;
+  border-radius: 4px;
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.catalog-filter__reset-button {
+  border: 0;
+  background-color: transparent;
+  text-align: center;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.search-results__heading {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.search-results-sort {
+  font-size: 18px;
+  line-height: normal;
+}
+
+.product-card-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.product-card__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product-card__ditails-button {
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #756257;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.product-card__favorite-button {
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #83b3d3;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.favorite-active {
+  background-color: #7db54f;
+}
+
+.product-card__rating {
+  font-size: 16px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.search-results__loadmore-button {
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #83b3d3;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.pagination {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.pagination-item {
+  border-radius: 4px;
+  background-color: #83b3d3;
+}
+
+.pagination-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-current {
+  background-color: #f2f2f2;
+}
+
+.pagination-current .pagination-link {
+  color: #000000;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.hotels-view-number {
+  font-size: 18px;
+  line-height: normal;
+}
+
+.catalog-subscription {
+  text-align: center;
+  color: #000000;
+}
