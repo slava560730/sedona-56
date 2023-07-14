@@ -140,9 +140,13 @@ body {
   width: 100%;
   max-width: 1200px;
   min-height: 411px;
+
   text-align: center;
   color: #ffffff;
+
   background-image: url("../images/content/subscription-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .subscription__heading {
