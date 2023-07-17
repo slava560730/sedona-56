@@ -32,6 +32,12 @@ body {
   line-height: 26px;
 }
 
+.navigation-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-list__link {
   color: #000000;
   text-decoration: none;
@@ -80,6 +86,12 @@ body {
   text-align: center;
   font-size: 22px;
   line-height: 36px;
+}
+
+.advantages-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-list-item {
@@ -168,7 +180,7 @@ body {
 }
 
 .subscription-form__button {
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
   color: #ffffff;
   background-color: #83b3d3;
 
@@ -176,6 +188,12 @@ body {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+.contacts-social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-link {
@@ -216,6 +234,12 @@ body {
   line-height: normal;
 }
 
+.breadcrumbs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .breadcrumbs__link {
   font-size: 16px;
   line-height: normal;
@@ -225,6 +249,12 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: normal;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter__accept-button {
@@ -260,6 +290,12 @@ body {
   line-height: normal;
 }
 
+.product-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .product-card-link {
   text-decoration: none;
   color: #000000;
@@ -271,7 +307,7 @@ body {
   line-height: normal;
 }
 
-.product-card__ditails-button {
+.product-card__details-button {
   color: #ffffff;
   border-radius: 4px;
   background-color: #756257;
@@ -312,6 +348,10 @@ body {
 }
 
 .pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
   font-size: 20px;
   font-weight: 700;
   line-height: normal;
