@@ -9,47 +9,58 @@
     <header class="main-header">
       <nav class="navigation">
         <a class="navigation__main">
-          <img src="#" alt="Главный логотип сайта города Седона." />
+          <img
+            src="images/icons/header-logo.svg"
+            alt="Главный логотип сайта города Седона."
+          />
         </a>
-        <ul class="navigation-list">
-          <li class="navigation-list-item">
-            <a class="navigation-list__link">Главная</a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list__link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list__link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
+        <div class="navigation-wrapper">
+          <ul class="navigation-list navigation-site">
+            <li class="navigation-list-item">
+              <a class="navigation-list__link">Главная</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list__link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list__link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
 
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-list-item">
-            <a class="navigation-list__link" href="#">
-              <span class="visually-hidden">Поиск.</span>
-            </a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list__link" href="#">
-              <span class="visually-hidden">Избранное.</span>
-            </a>
-          </li>
-          <li class="navigation-list-item">
-            <button class="navigation-list__button" type="button">
-              Хочу сюда!
-            </button>
-          </li>
-        </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-list-item">
+              <a class="navigation-list__link" href="#">
+                <span class="visually-hidden">Поиск.</span>
+                <img src="images/icons/search.svg" alt=" ">
+              </a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list__link" href="#">
+                <span class="visually-hidden">Избранное.</span>
+                <img src="images/icons/favorite.svg" alt=" ">
+              </a>
+            </li>
+            <li class="navigation-list-item">
+              <button class="navigation-list__button" type="button">
+                Хочу сюда!
+              </button>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <main class="main-index">
+    <main class="main-index main-container">
       <section class="hero">
         <img
           class="hero__image"
           src="/images/icons/welcome-sedona.svg"
           alt="Логотип сайта Седоны."
         />
-        <img class="hero__vector" src="images/icons/vector-hello-sedona.svg" alt=" " />
+        <img
+          class="hero__vector"
+          src="images/icons/vector-hello-sedona.svg"
+          alt=" "
+        />
       </section>
 
       <section class="advantages">
@@ -152,7 +163,9 @@
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <button class="hotel-booking__search-hotels-button" type="button">Поиск гостиницы в Седоне</button>
+        <button class="hotel-booking__search-hotels-button" type="button">
+          Поиск гостиницы в Седоне
+        </button>
       </section>
       <section class="subscription subscription--with-background">
         <h2 class="subscription__heading">Подпишитесь на рассылку</h2>
@@ -207,7 +220,10 @@
           </a>
         </p>
 
-        <a class="contacts__htmlacademy footer-link" href="https://htmlacademy.ru/">
+        <a
+          class="contacts__htmlacademy footer-link"
+          href="https://htmlacademy.ru/"
+        >
           <img src="#" alt="Логотип htmlacademy." />
         </a>
       </div>
