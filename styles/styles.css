@@ -17,14 +17,31 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  margin: 0;
 
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
 
   color: #000000;
   background-color: #ffffff;
 }
+
+/* Скрытые элементы */
+/* .visually-hidden {
+  visibility: hidden;
+  margin: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  } */
 
 .main-header {
   font-size: 20px;
@@ -75,6 +92,8 @@ body {
 }
 
 .advantages-heading {
+  margin: 0;
+
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -83,6 +102,8 @@ body {
 }
 
 .advantages-text {
+  margin: 0;
+
   text-align: center;
   font-size: 22px;
   line-height: 36px;
@@ -100,10 +121,15 @@ body {
 }
 
 .advantages-list__heading {
+  margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.advantages-list__text {
+  margin: 0;
 }
 
 .bg-blue {
@@ -125,6 +151,8 @@ body {
 }
 
 .hotel-booking__subtitle {
+  margin: 0;
+
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -132,6 +160,8 @@ body {
 }
 
 .hotel-booking__text {
+  margin: 0;
+
   font-size: 22px;
   line-height: 26px;
 }
@@ -162,6 +192,8 @@ body {
 }
 
 .subscription__heading {
+  margin: 0;
+
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -169,6 +201,8 @@ body {
 }
 
 .subscription__text {
+  margin: 0;
+
   font-size: 22px;
   line-height: 26px;
 }
