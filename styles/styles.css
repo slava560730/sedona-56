@@ -101,6 +101,9 @@ body {
 
   color: #ffffff;
   background-color: #756257;
+  border-radius: 4px;
+  padding: 9px 15px 8px 15px;
+  width: 160px;
 }
 
 .main-container {
@@ -113,33 +116,36 @@ body {
 }
 
 .hero {
-  width: 100%;
-  max-width: 1200px;
-  min-height: 490px;
-
   background-image: url("../images/content/header-background.jpg");
   background-size: 100% auto;
-  background-repeat: no-repeat;
-
+  background-repeat: round;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin-bottom: 63px;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 63px;
 }
 
 .hero__image {
   display: block;
   margin: 0 auto;
+  padding: 51px 0 0;
+}
+
+.hero__vector {
+  padding: 21px 0 0;
 }
 
 .advantages {
   font-size: 18px;
   line-height: 21px;
+
+  margin-bottom: 91px;
 }
 
 .advantages-heading {
   margin: 0;
-  padding: 63px 0 0;
 
   text-align: center;
   font-size: 30px;
@@ -198,7 +204,6 @@ body {
 }
 
 .advantages-list__text {
-  padding: 0 90px;
   margin: 0;
 }
 
@@ -229,19 +234,19 @@ body {
 }
 
 .hotel-booking {
+  margin-bottom: 93px;
   text-align: center;
 }
 
 .hotel-wrapper {
-  min-height: 417px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 
 .hotel-booking__subtitle {
   margin: 0;
+  padding: 0 0 29px;
 
   font-size: 30px;
   font-weight: 700;
@@ -251,12 +256,17 @@ body {
 
 .hotel-booking__text {
   margin: 0;
+  padding: 0 0 71px;
 
+  width: 720px;
   font-size: 22px;
   line-height: 26px;
 }
 
 .hotel-booking__search-hotels-button {
+  width: 575px;
+  padding: 15px 0;
+
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -268,16 +278,16 @@ body {
   background-color: #756257;
 }
 
-.subscription--with-background {
-  width: 100%;
-  max-width: 1200px;
+.subscription {
   min-height: 411px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
 
+  margin-bottom: 40px;
+}
+
+.subscription--with-background {
   text-align: center;
   color: #ffffff;
 
@@ -288,6 +298,7 @@ body {
 
 .subscription__heading {
   margin: 0;
+  padding: 94px 0 0;
 
   font-size: 30px;
   font-weight: 700;
@@ -297,9 +308,14 @@ body {
 
 .subscription__text {
   margin: 0;
+  padding: 29px 0 0;
 
   font-size: 22px;
   line-height: 26px;
+}
+
+.subscription-form {
+  padding: 46px 0 94px;
 }
 
 .subscription-form__email {
