@@ -275,6 +275,8 @@ body {
   text-transform: uppercase;
 
   border-radius: 10px;
+  border-color: transparent;
+
   color: #ffffff;
   background-color: #756257;
 }
@@ -289,6 +291,12 @@ body {
 }
 
 .subscription--with-background {
+  display: flex;
+  justify-content: center;
+
+  min-height: 411px;
+  margin-bottom: 0;
+
   text-align: center;
   color: #ffffff;
 
@@ -346,10 +354,17 @@ body {
   text-transform: uppercase;
 }
 
+.main-footer {
+  padding: 40px 0 40px;
+}
+
 .contacts {
+  width: 1056px;
+
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -547,7 +562,7 @@ body {
 }
 
 .button {
-  padding: 17px 16px;
+  padding: 14px 16px;
 
   border-radius: 4px;
   border: 2px solid rgba(230, 230, 230, 1);
@@ -767,5 +782,3 @@ body {
 .catalog-footer {
   padding: 40px 0 40px;
 }
-
-
