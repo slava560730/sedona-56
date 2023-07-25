@@ -358,7 +358,7 @@ body {
 .contacts-social {
   width: 107px;
   display: flex;
-  justify-content: space-around;
+  gap: 29px;
 
   list-style-type: none;
   margin: 0;
