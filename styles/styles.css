@@ -64,6 +64,8 @@ body {
 }
 
 .navigation__main {
+  width: 139px;
+  height: 70px;
   margin-right: 30px;
 }
 
