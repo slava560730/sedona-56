@@ -765,6 +765,13 @@ body {
 .pagination-link {
   color: #ffffff;
   text-decoration: none;
+
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination-current {
