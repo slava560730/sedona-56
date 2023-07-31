@@ -565,7 +565,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  margin: 0 0 56px;
+  margin: 0 0 53px;
 }
 
 .search-results__heading {
@@ -611,7 +611,10 @@ body {
   border: 2px solid #000;
 }
 
-.product-list {
+
+/* Product-list on flex ========================================================================== */
+
+/* .product-list {
   list-style-type: none;
   margin: 0 0 33px;
   padding: 0;
@@ -722,7 +725,9 @@ body {
   font-size: 16px;
   line-height: normal;
   text-transform: uppercase;
-}
+} */
+
+/* ================================================================================== */
 
 .search-results__loadmore-button-wrapper {
   font-family: "PT Sans", sans-serif;
