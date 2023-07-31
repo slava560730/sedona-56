@@ -611,11 +611,10 @@ body {
   border: 2px solid #000;
 }
 
-
 /* Product-list on grid ========================================================================== */
 .product-list {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 340px);
   grid-column-gap: 18px;
   grid-row-gap: 10px;
 
@@ -627,19 +626,19 @@ body {
 .product-card {
   display: grid;
   grid-template-columns: 150px 150px;
-  grid-template-rows: repeat(5, auto);
-  grid-template-areas: 
-  "image image" 
-  "type-housing min-price"
-  "details-button favorite-button"
-  "stars rating";
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "image image"
+    "type-housing min-price"
+    "details-button favorite-button"
+    "stars rating";
   grid-row-gap: 16px;
   margin: 20px;
 }
 
 .product-card-link {
   grid-area: image;
-  
+
   text-decoration: none;
   color: #000000;
 }
@@ -657,6 +656,9 @@ body {
 .product-card__details-button {
   grid-area: details-button;
 
+  width: 133px;
+  justify-self: start;
+
   font-family: "PT Sans", sans-serif;
 
   color: #ffffff;
@@ -673,7 +675,6 @@ body {
   grid-area: favorite-button;
 
   font-family: "PT Sans", sans-serif;
- 
 
   color: #ffffff;
   border-radius: 4px;
@@ -691,12 +692,23 @@ body {
 
 .product-card__stars {
   grid-area: stars;
+  align-self: center;
+}
+
+.product-card-rating-number-wrapper {
+  display: flex;
+  min-height: 37px;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: rgba(242, 242, 242, 1);
+  align-self: stretch;
+  align-items: center;
 }
 
 .product-card__rating {
   grid-area: rating;
   margin: 0;
-  
+
   border-radius: 4px;
   background-color: rgba(242, 242, 242, 1);
 
@@ -710,9 +722,8 @@ body {
   object-fit: contain;
 }
 
-.product-card__title{
+.product-card__title {
   margin: 0;
-  
 
   font-size: 24px;
   font-weight: 700;
