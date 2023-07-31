@@ -612,6 +612,115 @@ body {
 }
 
 
+/* Product-list on grid ========================================================================== */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-column-gap: 18px;
+  grid-row-gap: 10px;
+
+  list-style-type: none;
+  margin: 0 0 34px;
+  padding: 0;
+}
+
+.product-card {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: 
+  "image image" 
+  "type-housing min-price"
+  "details-button favorite-button"
+  "stars rating";
+  grid-row-gap: 16px;
+  margin: 20px;
+}
+
+.product-card-link {
+  grid-area: image;
+  
+  text-decoration: none;
+  color: #000000;
+}
+
+.product-card__type-housing {
+  grid-area: type-housing;
+  margin: 0;
+}
+
+.product-card__min-price {
+  grid-area: min-price;
+  margin: 0;
+}
+
+.product-card__details-button {
+  grid-area: details-button;
+
+  font-family: "PT Sans", sans-serif;
+
+  color: #ffffff;
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: #756257;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.product-card__favorite-button {
+  grid-area: favorite-button;
+
+  font-family: "PT Sans", sans-serif;
+ 
+
+  color: #ffffff;
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: #83b3d3;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.favorite-active {
+  background-color: #7db54f;
+}
+
+.product-card__stars {
+  grid-area: stars;
+}
+
+.product-card__rating {
+  grid-area: rating;
+  margin: 0;
+  
+  border-radius: 4px;
+  background-color: rgba(242, 242, 242, 1);
+
+  font-size: 16px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.product-card__image {
+  display: block;
+  object-fit: contain;
+}
+
+.product-card__title{
+  margin: 0;
+  
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* =============================================================================================== */
+
 /* Product-list on flex ========================================================================== */
 
 /* .product-list {
