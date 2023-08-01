@@ -86,8 +86,8 @@ body {
 }
 
 .navigation-site {
-  /* display: flex;
-  flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
   width: 445px;
   gap: 4px;
 }
