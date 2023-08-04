@@ -52,6 +52,7 @@ body {
 }
 
 .main-header {
+  z-index: 1;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -457,6 +458,7 @@ body {
   background-repeat: no-repeat;
 
   margin-bottom: 44px;
+  margin-top: -6px;
 }
 
 .catalog-wrapper {
@@ -612,10 +614,18 @@ body {
 
   padding: 12px 79px 13px 19px;
 
+  border-radius: 4px;
+  border: 2px solid #e6e6e6;
+
   font-size: 18px;
   line-height: normal;
 
   cursor: pointer;
+}
+
+.search-results-sort:active {
+  border-radius: 4px;
+  border: 2px solid #e6e6e6;
 }
 
 .search-results-display-mode {
@@ -785,7 +795,8 @@ body {
   font-family: "PT Sans", sans-serif;
 
   width: 620px;
-  height: 60px;
+  /* height: 60px; */
+  padding: 15px 0;
 
   color: #ffffff;
   border-radius: 4px;
@@ -873,6 +884,8 @@ body {
   font-size: 18px;
   line-height: normal;
 
+  border-radius: 4px;
+  border: 2px solid #e6e6e6;
   cursor: pointer;
 }
 
