@@ -154,6 +154,8 @@ body {
   line-height: 20px;
   text-transform: uppercase;
 
+  box-sizing: border-box;
+
   color: #ffffff;
   background-color: #756257;
   border-radius: 4px;
@@ -192,7 +194,8 @@ body {
 .hero {
   background-image: url("../images/content/header-background.jpg");
   background-size: 100% auto;
-  background-repeat: round;
+  background-repeat: no-repeat;
+  min-height: 485px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,6 +210,11 @@ body {
 .hero__image {
   display: block;
   margin: 51px auto 21px;
+}
+
+.hero__vector {
+  position: absolute;
+  bottom: 0;
 }
 
 .advantages {
@@ -492,25 +500,42 @@ body {
 
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
 .contacts-social {
-  width: 107px;
   display: flex;
   flex-wrap: wrap;
-  gap: 29px;
+  gap: 9px;
 
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 30px 0 0;
+  box-sizing: border-box;
+}
+
+.contacts-social-item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
 }
 
 .cotnacts-social__icons {
   color: #83b3d3;
+}
+
+.contact-logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .cotnacts-social__icons:hover {
@@ -539,6 +564,10 @@ body {
   margin: 0;
 }
 
+.contacts-item {
+  width: 33%;
+}
+
 .footer-link {
   font-size: 40px;
   line-height: 40px;
@@ -551,7 +580,6 @@ body {
 
 .footer-link:focus {
   border-radius: 10px;
-  /* box-shadow: 0 0 0 3px #83B3D3; */
   outline: 3px solid #83b3d3;
 }
 
@@ -606,13 +634,34 @@ body {
   gap: 11px;
 }
 
+.breadcrumbs-item {
+  position: relative;
+  margin-right: 10px;
+}
+
+.breadcrumbs-item::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 5px;
+  height: 8px;
+  background-image: url("/images/icons/nav-link.svg");
+
+  top: 9px;
+  right: -15px;
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
+}
+
 .breadcrumbs__link {
   font-size: 16px;
   line-height: normal;
 }
 
 .breadcrumbs-item__image {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .breadcrumbs__link:hover {
@@ -620,13 +669,13 @@ body {
 }
 
 .breadcrumbs__link:focus {
-  color: #FFFFFF;  
+  color: #ffffff;
   box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
 }
 
-.breadcrumbs__link:active {  
-  color: #FFFFFF;
+.breadcrumbs__link:active {
+  color: #ffffff;
   opacity: 0.3;
   box-shadow: none;
 }
@@ -702,16 +751,15 @@ body {
 
 .control-input:focus {
   border-radius: 5px;
-  color: #FFFFFF;
-  opacity: 0.6;   
-  background-color:  #FFFFFF;
+  color: #ffffff;
+  opacity: 0.6;
+  background-color: #ffffff;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
-
-.control-input:active {  
-  color: #FFFFFF;
+.control-input:active {
+  color: #ffffff;
   opacity: 0.3;
   box-shadow: none;
 }
@@ -745,6 +793,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 
   color: #ffffff;
   background-color: #83b3d3;
@@ -766,7 +815,7 @@ body {
 
 .catalog-filter__accept-button:focus {
   background-color: #68a2ca;
-  box-shadow: 0 0 0 3px #FFFFFF;
+  box-shadow: 0 0 0 3px #ffffff;
   outline: none;
 }
 
@@ -779,6 +828,7 @@ body {
 
 .catalog-filter__reset-button {
   font-family: "PT Sans", sans-serif;
+  box-sizing: border-box;
 
   color: #ffffff;
   border: 0;
@@ -794,9 +844,9 @@ body {
 }
 
 .catalog-filter__reset-button:focus {
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 4px;
-  box-shadow: 0 0 0 3px #83B3D3;
+  box-shadow: 0 0 0 3px #83b3d3;
   outline: none;
 }
 
@@ -1067,6 +1117,7 @@ body {
 }
 
 .pagination-link {
+  box-sizing: border-box;
   color: #ffffff;
   text-decoration: none;
 
