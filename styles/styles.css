@@ -960,6 +960,8 @@ body {
 
   text-decoration: none;
   color: #000000;
+
+  outline: none;
 }
 
 .product-card__type-housing {
@@ -1045,6 +1047,18 @@ body {
   display: block;
   object-fit: contain;
   margin-bottom: 16px;
+}
+
+.product-card__image:hover {
+  opacity: 0.6;
+}
+
+.product-card__image:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.product-card__image:active {
+  opacity: 0.3;
 }
 
 .product-card__title {
