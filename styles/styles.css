@@ -368,8 +368,7 @@ body {
 
 .hotel-booking__search-hotels-button:focus {
   background-color: #615048;
-  outline: 3px solid #83b3d3;
-  outline: none;
+  outline: 3px solid #83b3d3;  
 }
 
 .hotel-booking__search-hotels-button:active {
@@ -960,8 +959,6 @@ body {
 
   text-decoration: none;
   color: #000000;
-
-  outline: none;
 }
 
 .product-card__type-housing {
@@ -994,6 +991,19 @@ body {
   cursor: pointer;
 }
 
+.product-card__details-button:hover {
+  background-color: #615048;
+}
+
+.product-card__details-button:focus {
+  outline: 3px solid #83b3d3;
+  background-color: #615048;
+}
+
+.product-card__details-button:active {
+  opacity: 0.3;
+}
+
 .product-card__favorite-button {
   grid-area: favorite-button;
 
@@ -1011,8 +1021,34 @@ body {
   cursor: pointer;
 }
 
+.product-card__favorite-button:hover {
+  background-color: #68A2CA;
+}
+
+.product-card__favorite-button:focus {
+  outline: 3px solid #756257;
+  background-color: #68A2CA;
+}
+
+.product-card__favorite-button:active {
+  opacity: 0.3;
+}
+
 .favorite-active {
   background-color: #7db54f;
+}
+
+.favorite-active:hover {
+  background-color: #6C9E42;
+}
+
+.favorite-active:focus {
+  outline: 3px solid #756257;
+  background-color: #6C9E42;
+}
+
+.favorite-active:active {
+  opacity: 0.3;
 }
 
 .product-card__stars {
@@ -1100,6 +1136,19 @@ body {
   text-transform: uppercase;
 
   cursor: pointer;
+}
+
+.search-results__loadmore-button:hover {
+  background-color: #68A2CA;
+}
+
+.search-results__loadmore-button:focus {
+  outline: 3px solid #756257;
+  background-color: #68A2CA;
+}
+
+.search-results__loadmore-button:active {
+  opacity: 0.3;
 }
 
 .pagination-wrapper {
@@ -1199,6 +1248,20 @@ body {
   border-radius: 4px;
   border: 2px solid #e6e6e6;
   cursor: pointer;
+}
+
+.hotels-view-number:hover {
+  border: 2px solid #83b3d3;
+}
+
+.hotels-view-number:focus {
+  border: 2px solid #83b3d3;
+  outline: none;
+}
+
+.hotels-view-number:active {
+  border: 2px solid #e6e6e6;
+  opacity: 0.3;
 }
 
 .catalog-subscription {
