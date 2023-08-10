@@ -701,53 +701,103 @@ body {
 }
 
 .control {
-  display: flex;
+  padding: 0 0 0 39px;
+  position: relative;
+  display: block;
   align-items: center;
   cursor: pointer;
 }
 
-.control .checkbox {
-  width: 20px;
-  height: 20px;
-  margin-right: 16px;
-  border-radius: 4px;
-  background-color: #ffffff;
-  vertical-align: middle;
+.control-input {
+  position: absolute;
   appearance: none;
   -webkit-appearance: none;
-  outline: none;
-  cursor: pointer;
 }
 
-.control .checkbox:checked {
-  appearance: auto;
-  border-radius: 4px;
-  background-color: #000;
-}
-
-.control .radio {
+.control-mark {
+  position: absolute;
+  display: block;
+  top: 2px;
+  left: 0;
   width: 20px;
   height: 20px;
-  margin-right: 19px;
-}
-
-.control-input:hover {
-  opacity: 0.6;
-}
-
-.control-input:focus {
-  border-radius: 5px;
-  color: #ffffff;
-  opacity: 0.6;
   background-color: #ffffff;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  outline: 3px solid #83b3d3;
+  border-radius: 4px;
 }
 
-.control-input:active {
-  color: #ffffff;
-  opacity: 0.3;
-  box-shadow: none;
+.control:hover .control-mark {
+  opacity: 0.6;
+}
+
+.checkbox:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 2px solid #83b3d3;
+}
+
+.checkbox:checked:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 2px solid #83b3d3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  height: 2px;
+  background-color: #3f5e72;
+  content: "";
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  width: 6px;
+  top: 11px;
+  left: 4px;
+  transform: rotate(50deg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  width: 12px;
+  top: 9px;
+  left: 6px;
+  transform: rotate(-45deg);
+}
+
+.control-radio-mark {
+  position: absolute;
+  display: block;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.control:hover .control-radio-mark {
+  opacity: 1;
+}
+
+.radio:focus + .control-radio-mark {
+  background-color: rgba(255, 255, 255, 1);
+  outline: 2px solid #83b3d3;
+}
+
+.radio:checked:focus + .control-radio-mark {
+  outline: 2px solid #83b3d3;
+}
+
+.radio:checked + .control-radio-mark {
+  outline: none;
+}
+
+.control-input[type="radio"]:checked + .control-radio-mark::before {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: #3f5e72;
+  content: "";
 }
 
 .catalog-filter-price {
@@ -767,12 +817,12 @@ body {
 .catalog-filter-price__input {
   font-family: PT Sans;
   font-size: 18px;
-  font-style: normal; 
+  font-style: normal;
   line-height: normal;
 
   background-color: transparent;
   border: 2px solid #fff;
-  color: #ffffff;  
+  color: #ffffff;
   width: 144px;
   height: 48px;
 }
