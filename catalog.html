@@ -234,29 +234,31 @@
         <section class="search-results">
           <div class="search-results-wrapper">
             <h2 class="search-results__heading">Найдено гостиниц: 38</h2>
-            <select
-              class="search-results-sort"
-              name="sort"
-              id="search-results-sort"
-              aria-label="Сортировка"
-            >
-              <option value="cheap">Сначала дешёвые</option>
-              <option value="popular">Сначала популярные</option>
-              <option value="expensive">Сначала дорогие</option>
-            </select>
-            <div class="search-results-display-mode">
-              <a class="card-view-toggle active-view" href="#">
-                <span class="visually-hidden">Показать карточки.</span>
-                <img src="images/icons/mode-tile.svg" alt=" " />
-              </a>
-              <a class="card-view-toggle" href="#">
-                <span class="visually-hidden">Показать слайд.</span>
-                <img src="images/icons/mode-slideshow.svg" alt=" " />
-              </a>
-              <a class="card-view-toggle" href="#">
-                <span class="visually-hidden">Показать список.</span>
-                <img src="images/icons/mode-list.svg" alt=" " />
-              </a>
+            <div class="search-filter-wrapper">
+              <select
+                class="search-results-sort"
+                name="sort"
+                id="search-results-sort"
+                aria-label="Сортировка"
+              >
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="popular">Сначала популярные</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+              <div class="search-results-display-mode">
+                <a class="card-view-toggle active-view" href="#">
+                  <span class="visually-hidden">Показать карточки.</span>
+                  <img src="images/icons/mode-tile.svg" alt=" " />
+                </a>
+                <a class="card-view-toggle" href="#">
+                  <span class="visually-hidden">Показать слайд.</span>
+                  <img src="images/icons/mode-slideshow.svg" alt=" " />
+                </a>
+                <a class="card-view-toggle" href="#">
+                  <span class="visually-hidden">Показать список.</span>
+                  <img src="images/icons/mode-list.svg" alt=" " />
+                </a>
+              </div>
             </div>
           </div>
           <ul class="product-list">
@@ -269,6 +271,8 @@
                   height="206"
                   alt="Вид гостиницы."
                 />
+              </a>
+              <a class="product-card-title-link" href="#">
                 <h3 class="product-card__title">Amara Resort & Spa</h3>
               </a>
               <p class="product-card__type-housing">Гостиница</p>
@@ -297,6 +301,8 @@
                   height="206"
                   alt="Вид гостиницы."
                 />
+              </a>
+              <a class="product-card-title-link" href="#">
                 <h3 class="product-card__title">Desert Quail Inn</h3>
               </a>
               <p class="product-card__type-housing">Гостиница</p>
@@ -325,6 +331,8 @@
                   height="206"
                   alt="Вид гостиницы."
                 />
+              </a>
+              <a class="product-card-title-link" href="#">
                 <h3 class="product-card__title">Villas at Poco Diablo</h3>
               </a>
               <p class="product-card__type-housing">Гостиница</p>
@@ -356,6 +364,8 @@
                   height="206"
                   alt="Вид гостиницы."
                 />
+              </a>
+              <a class="product-card-title-link" href="#">
                 <h3 class="product-card__title">GreenTree Inn</h3>
               </a>
               <p class="product-card__type-housing">Гостиница</p>
@@ -418,7 +428,7 @@
           </div>
         </section>
         <section class="subscription catalog-subscription">
-          <h2 class="subscription__heading">Подпишитесь на рассылку</h2>
+          <h2 class="subscription__heading catalog-subscription__heading">Подпишитесь на рассылку</h2>
           <p class="subscription__text">
             Только полезная информация и никакого спама,<br />
             честное бойскаутское!
