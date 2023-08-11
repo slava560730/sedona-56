@@ -73,7 +73,7 @@ body {
 
 .navigation__main {
   width: 139px;
-  height: 70px;
+  height: 71px;
   margin-right: 30px;
 }
 
@@ -607,7 +607,7 @@ body {
 }
 
 .breadcrumbs {
-  margin: 0 0 45px;
+  margin: 0 0 41px;
   padding: 0;
   list-style-type: none;
 
@@ -673,7 +673,13 @@ body {
 
 .catalog-filter {
   display: flex;
-  justify-content: space-between;
+}
+
+.catalog-filter-wrapper {
+  display: flex;
+  gap: 64px;
+
+  margin-right: 167px;
 }
 
 .catalog-filter-group {
@@ -807,7 +813,7 @@ body {
 }
 
 .catalog-filter-price {
-  margin: 0;
+  margin: 0 81px 0 0;
   padding: 0;
   border: none;
 }
@@ -818,6 +824,60 @@ body {
   line-height: normal;
 
   margin: 0 0 34px;
+}
+
+.range-inputs-wrapper {
+  margin-bottom: 29px;
+}
+
+.range-scale {
+  width: 287px;
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  left: 0px;
+  width: 227px;
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #ffffff;
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  border-radius: 5px;
+  outline: 3px solid #83b3d3;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
 }
 
 .catalog-filter-price__input {
@@ -845,16 +905,32 @@ body {
   margin-left: -7px;
 }
 
+.catalog-filter-price .input-from:hover,
+.catalog-filter-price .input-to:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-filter-price .input-from:focus {
+  border: 2px solid #FFF;
+  box-shadow: 0px 0px 0px 3px #81B3D2;
+}
+
+.catalog-filter-price .input-from:active {
+  border: 2px solid #FFF;
+  background-color: #756257;
+}
+
 .catalog-filter-price__input::-webkit-outer-spin-button,
 .catalog-filter-price__input::-webkit-inner-spin-button {
   appearance: none;
+  -webkit-appearance: none;
   margin: 0;
 }
 
 .buttons-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 61px;
 }
 
 .catalog-filter__accept-button {
