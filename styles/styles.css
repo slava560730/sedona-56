@@ -1459,3 +1459,84 @@ body {
 .catalog-footer {
   padding: 40px 0 40px;
 }
+
+/* Modal */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 62px 70px 70px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.modal-content {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.modal-housing-search {
+  width: 715px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 54px;
+  height: 54px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  background-image: url("/images/icons/modal-close-btn.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.housing-search-form {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.field-group {
+  margin: 0;
+}
+
+.type-guests {
+  display: flex;
+  gap: 56px;
+  flex-direction: row;
+}
+
+.type-guests-adults {
+  margin: 0;
+}
+
+.type-guests-childrens {
+  margin: 0;
+}
