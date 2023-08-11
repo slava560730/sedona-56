@@ -1523,6 +1523,15 @@ body {
   flex-direction: column;
 }
 
+.modal-label {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  
+  color: #000;
+}
+
 .field-group {
   margin: 0;
 }
@@ -1539,4 +1548,31 @@ body {
 
 .type-guests-childrens {
   margin: 0;
+}
+
+.field {
+  width: 420px;
+  background-color: #F2F2F2;
+  padding: 15px 19px;
+}
+
+.amount-field {
+  width: 133px;
+  background-color: #F2F2F2;
+}
+
+.modal-submit-btn {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: #83b3d3;
+  border-radius: 10px;
+  border: none;
+
+  padding: 10px 0;
 }
