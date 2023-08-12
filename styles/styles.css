@@ -1509,12 +1509,11 @@ body {
 .modal-title {
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
-  font-style: normal;
   font-weight: 700;
   line-height: 40px;
   text-transform: uppercase;
 
-  margin: 0;
+  margin: 0 0 19px 0;
 }
 
 .housing-search-form {
@@ -1528,11 +1527,14 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
-  
+
   color: #000;
 }
 
 .field-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 0;
 }
 
@@ -1552,13 +1554,22 @@ body {
 
 .field {
   width: 420px;
-  background-color: #F2F2F2;
+  font: inherit;
+  font-weight: 700;
+  background-color: #f2f2f2;
   padding: 15px 19px;
+
+  border: none;
+  border-radius: 4px;
 }
 
 .amount-field {
   width: 133px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
+}
+
+.adults-value {
+  margin-right: 67px;
 }
 
 .modal-submit-btn {
