@@ -1045,7 +1045,7 @@ body {
 .search-results-sort {
   font-family: "PT Sans", sans-serif;
   appearance: none;
-  background-image: url(/images/icons/dropdown.svg);
+  background-image: url("/images/icons/dropdown.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   padding: 8px 102px 10px 15px;
@@ -1421,7 +1421,7 @@ body {
   line-height: normal;
 
   appearance: none;
-  background-image: url(/images/icons/dropdown.svg);
+  background-image: url("/images/icons/dropdown.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
 
@@ -1523,6 +1523,8 @@ body {
 }
 
 .modal-label {
+  min-width: 155px;
+
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -1533,22 +1535,26 @@ body {
 
 .field-group {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  position: relative;
+  align-items: center;
   margin: 0;
 }
 
 .type-guests {
   display: flex;
-  gap: 56px;
+  flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
 }
 
 .type-guests-adults {
-  margin: 0;
+  position: relative;
+  margin: 0 56px 0 0;
 }
 
 .type-guests-childrens {
+  position: relative;
   margin: 0;
 }
 
@@ -1561,6 +1567,16 @@ body {
 
   border: none;
   border-radius: 4px;
+  outline: none;
+
+  box-sizing: border-box;
+}
+
+.field::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background-image: url("/images/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .amount-field {
@@ -1575,6 +1591,61 @@ body {
   border-radius: 4px;
 
   background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.type-guests-adults .minus::before {
+  content: "";
+  position: absolute;
+
+  width: 13px;
+  height: 1px;
+  background-image: url("/images/icons/minus.svg");
+
+  top: 23px;
+  right: 102px;
+  cursor: pointer;
+}
+
+.type-guests-adults .plus::after {
+  content: "";
+  position: absolute;
+
+  width: 13px;
+  height: 13px;
+
+  background-image: url("/images/icons/plus.svg");
+  background-repeat: no-repeat;
+
+  top: 17px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.type-guests .minus-ch::before {
+  content: "";
+  position: absolute;
+
+  width: 13px;
+  height: 1px;
+  background-image: url("/images/icons/minus.svg");
+
+  top: 370px;
+  right: 172px;
+  cursor: pointer;
+}
+
+.type-guests .plus-ch::after {
+  content: "";
+  position: absolute;
+
+  width: 13px;
+  height: 13px;
+  background-image: url("/images/icons/plus.svg");
+
+  top: 364px;
+  right: 90px;
+  cursor: pointer;
 }
 
 .adults-value {
@@ -1582,7 +1653,7 @@ body {
 }
 
 .childrens-value {
-  margin-right: 51px;
+  margin-right: 8px;
 }
 
 .modal-submit-btn {
@@ -1600,10 +1671,61 @@ body {
   padding: 10px 0;
 }
 
-
-
 .amount-field::-webkit-outer-spin-button,
 .amount-field::-webkit-inner-spin-button {
   appearance: none;
   -webkit-appearance: none;
+}
+
+.invalid-text {
+  top: 50px;
+  left: 155px;
+  position: absolute;
+  color: rgba(255, 87, 87, 1);
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.valid-text {
+  top: 50px;
+  left: 155px;
+  position: absolute;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.tooltip-toggle {
+  margin-right: 18px;
+
+  background-color: white;
+  border: none;
+  width: 25px;
+  height: 25px;
+  background-color: #83b3d3;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.tooltip-text {
+  background: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  padding: 21px 18px 18px 22px;
+  align-items: center;
+  width: 256px;
+  height: 143px;
+  position: absolute;
+  z-index: 1;
+  left: 353px;
+  bottom: 24px;
+  display: none;
+}
+
+.type-guests:hover .tooltip-text,
+.type-guests:focus .tooltip-text {
+  display: flex;
 }
