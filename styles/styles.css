@@ -1565,6 +1565,10 @@ body {
 
 .amount-field {
   width: 133px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+
   background-color: #f2f2f2;
 }
 
@@ -1572,10 +1576,13 @@ body {
   margin-right: 67px;
 }
 
+.childrens-value {
+  margin-right: 51px;
+}
+
 .modal-submit-btn {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 40px;
   text-transform: uppercase;
@@ -1586,4 +1593,16 @@ body {
   border: none;
 
   padding: 10px 0;
+}
+
+.amount-field {
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+}
+
+.amount-field::-webkit-outer-spin-button,
+.amount-field::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
 }
