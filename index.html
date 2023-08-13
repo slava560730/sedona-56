@@ -449,49 +449,66 @@
                 >На эти даты есть свободные номера. Пока есть.</span
               >
             </p>
-
             <div class="type-guests">
-              <p class="type-guests-adults">
-                <label class="adults-value modal-label" for="adults">
-                  Взрослые:
-                </label>
-                <input
-                  class="adults-form-field amount-field"
-                  type="number"
-                  id="adults"
-                  name="adults"
-                  value="2"
-                />
-                <span class="minus"></span>
-                <span class="plus"></span>
-              </p>
-              <p class="type-guests-childrens">
+              <div class="type-guests-adults">
+                <label class="adults-value modal-label">Взрослые:</label>
+                <div class="number-container">
+                  <button class="number-minus" type="button"></button>
+                  <label>
+                    <input
+                      class="number-input"
+                      type="number"
+                      name="adult-number"
+                      min="0"
+                      value="2"
+                      readonly=""
+                    />
+                  </label>
+                  <button class="number-plus" type="button"></button>
+                </div>
+              </div>
+
+              <div class="type-guests-childrens">
                 <label class="childrens-value modal-label" for="childrens">
                   Дети:
                 </label>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <button
+                    class="tooltip-toggle"
+                    type="button"
+                    aria-labelledby="tooltip-label"
+                  >
                     i
                   </button>
                   <div class="tooltip-text" role="tooltip" id="tooltip-label">
                     Укажите количество детей, которые будут с вами, возраст
-                    которых от 6 до 18 лет. Дети до 6 лет размещаются
-                    бесплатно.
-                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="9" fill="none" viewBox="0 0 19 9" style="position: absolute; top: -9px; left: 118px">
+                    которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="9"
+                      fill="none"
+                      viewBox="0 0 19 9"
+                      style="position: absolute; top: -9px; left: 118px"
+                    >
                       <path fill="#333" d="M9.5 0 19 9H0l9.5-9Z"></path>
                     </svg>
                   </div>
                 </span>
-                <input
-                  class="childrens-form-field amount-field"
-                  type="number"
-                  id="childrens"
-                  name="childrens"
-                  value="1"
-                />
-                <span class="minus-ch"></span>
-                <span class="plus-ch"></span>
-              </p>
+                <div class="number-container">
+                  <button class="number-minus" type="button"></button>
+                  <label>
+                    <input
+                      class="number-input"
+                      type="number"
+                      name="child-number"
+                      min="0"
+                      value="1"
+                      readonly=""
+                  /></label>
+                  <button class="number-plus" type="button"></button>
+                </div>
+              </div>
             </div>
             <button class="modal-submit-btn" type="submit">Найти</button>
           </form>
