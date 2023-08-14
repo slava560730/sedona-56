@@ -934,7 +934,13 @@ body {
 .catalog-filter-price__input::-webkit-inner-spin-button {
   appearance: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
+
   margin: 0;
+}
+
+.catalog-filter-price__input {
+  -moz-appearance: textfield;
 }
 
 .buttons-wrapper {
@@ -1523,7 +1529,7 @@ body {
 }
 
 .modal-label {
-  font-family: "PT Sans", sans-serif; 
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
@@ -1574,6 +1580,17 @@ body {
   border: none;
 }
 
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;  
+}
+
+.number-input {
+  -moz-appearance: textfield;
+}
+
 .number-minus {
   position: absolute;
   top: 15px;
@@ -1589,16 +1606,16 @@ body {
   opacity: 0.3;
 }
 .number-minus:hover {
-  opacity: 1; 
+  opacity: 1;
 }
 .number-minus:focus {
   opacity: 1;
- 
+
   background-repeat: no-repeat;
   outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
-.number-minus:active {  
+.number-minus:active {
   background-repeat: no-repeat;
   outline: none;
   opacity: 0.2;
@@ -1625,7 +1642,7 @@ body {
   border-radius: 4px;
   opacity: 1;
 }
-.number-plus:active {  
+.number-plus:active {
   background-repeat: no-repeat;
   outline: none;
   opacity: 0.2;

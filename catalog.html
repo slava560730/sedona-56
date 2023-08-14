@@ -123,7 +123,11 @@
                 <a class="breadcrumbs__link"> Гостиницы </a>
               </li>
             </ul>
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <form
+              class="catalog-filter"
+              action="https://echo.htmlacademy.ru/"
+              method="get"
+            >
               <div class="catalog-filter-wrapper">
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter__title">Инфраструктура:</legend>
@@ -220,6 +224,7 @@
                       class="catalog-filter-price__input input-from"
                       name="filter-price-from"
                       type="number"
+                      oninput="this.value = Math.abs(this.value)"
                       value="0"
                       placeholder="от"
                     />
@@ -227,6 +232,7 @@
                       class="catalog-filter-price__input input-to"
                       name="filter-price-to"
                       type="number"
+                      oninput="this.value = Math.abs(this.value)"
                       value="9000"
                       placeholder="до"
                     />
