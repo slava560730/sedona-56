@@ -117,6 +117,7 @@ body {
 .navigation-user {
   width: 300px;
   justify-content: flex-end;
+  align-self: self-start;
 }
 
 .navigation-user .navigation-list-item:last-child {
@@ -167,7 +168,7 @@ body {
   background-color: #756257;
   border-radius: 4px;
   border-color: transparent;
-  padding: 7px 15px 6px 15px;
+  padding: 7px 15px 7px 15px;
   width: 160px;
 
   cursor: pointer;
@@ -295,7 +296,7 @@ body {
   background-color: #83b3d3;
 }
 
-.bg-grey {  
+.bg-grey {
   width: 400px;
   gap: 21px;
 
@@ -616,14 +617,14 @@ body {
 }
 
 .breadcrumbs {
-  margin: 0 0 41px;
+  margin: -6px 0 45px 1px;
   padding: 0;
   list-style-type: none;
 
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 11px;
+  gap: 16px;
 }
 
 .breadcrumbs-item {
@@ -676,7 +677,7 @@ body {
 }
 
 .catalog-wrapper {
-  width: 1057px;
+  width: 1056px;
   margin: 0 auto;
 }
 
@@ -688,7 +689,7 @@ body {
   display: flex;
   gap: 64px;
 
-  margin-right: 167px;
+  margin-right: 168px;
 }
 
 .catalog-filter-group {
@@ -832,11 +833,11 @@ body {
   font-weight: 700;
   line-height: normal;
 
-  margin: 0 0 34px;
+  margin: 0 0 36px;
 }
 
 .range-inputs-wrapper {
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 }
 
 .range-scale {
@@ -955,7 +956,7 @@ body {
 .buttons-wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 61px;
+  margin-top: 62px;
 }
 
 .catalog-filter__accept-button {
