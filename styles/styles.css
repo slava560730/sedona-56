@@ -1522,6 +1522,19 @@ body {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
 .modal-title {
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
@@ -1599,6 +1612,15 @@ body {
 
 .number-input {
   -moz-appearance: textfield;
+}
+
+.number-input:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+.number-input:active {
+  background-color: #fff;
+  outline: 3px solid #83b3d3;
 }
 
 .number-minus {
@@ -1679,6 +1701,20 @@ body {
   background-position: center;
 }
 
+.field:hover {
+  background-color: #e6e6e6;
+}
+
+.field:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.field:active {
+  background-color: #ffffff;
+  outline: 2px solid #000000;
+}
+
 .amount-field {
   width: 133px;
   font-size: 18px;
@@ -1727,6 +1763,21 @@ body {
   padding: 10px 0;
 }
 
+.modal-submit-btn:hover {
+  background-color: #68a2ca;
+}
+
+.modal-submit-btn:focus {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
+}
+
+.modal-submit-btn:active {
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
 .amount-field::-webkit-outer-spin-button,
 .amount-field::-webkit-inner-spin-button {
   appearance: none;
@@ -1760,6 +1811,15 @@ body {
   background-color: #83b3d3;
   border-radius: 50%;
   color: #ffffff;
+}
+
+.tooltip-toggle:hover {
+  background-color: #68a2ca;
+}
+
+.tooltip-toggle:focus {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
 }
 
 .tooltip-text {
