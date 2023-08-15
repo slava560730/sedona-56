@@ -87,7 +87,7 @@ body {
 
 .navigation-list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
   margin: 0;
@@ -116,7 +116,7 @@ body {
 }
 
 .navigation-user {
-  width: 300px;
+  width: 350px;
   justify-content: flex-end;
   align-self: self-start;
 }
@@ -838,7 +838,29 @@ body {
 }
 
 .range-inputs-wrapper {
+  position: relative;
+  display: inline-block;
   margin-bottom: 28px;
+}
+
+.range-inputs-wrapper::before {
+  content: "от";
+  position: absolute;
+  top: 48%;
+  right: 158px;
+  transform: translateY(-50%);
+  color: #aaa;
+  pointer-events: none;
+}
+
+.range-inputs-wrapper::after {
+  content: "до";
+  position: absolute;
+  top: 48%;
+  right: 17px;
+  transform: translateY(-50%);
+  color: #aaa;
+  pointer-events: none;
 }
 
 .range-scale {
@@ -883,7 +905,7 @@ body {
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -9px;
 }
 
 .range-wrapper-inputs {
@@ -1348,6 +1370,7 @@ body {
 }
 
 .pagination {
+  width: 500px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1358,6 +1381,7 @@ body {
   text-transform: uppercase;
 
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 8px;
 }
