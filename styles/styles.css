@@ -1658,6 +1658,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
+
+  cursor: pointer;
 }
 .number-minus:hover {
   opacity: 1;
@@ -1686,6 +1688,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
+
+  cursor: pointer;
 }
 .number-plus:hover {
   opacity: 1;
@@ -1783,6 +1787,8 @@ body {
   border: none;
 
   padding: 10px 0;
+
+  cursor: pointer;
 }
 
 .modal-submit-btn:hover {
