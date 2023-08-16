@@ -597,7 +597,7 @@ body {
 }
 
 .catalog {
-  min-height: 408px;
+  /* min-height: 408px; */
   color: #ffffff;
   background-image: url("../images/content/catalog-background.jpg");
   background-size: 100% 100%;
@@ -609,7 +609,7 @@ body {
 }
 
 .catalog-wrapper {
-  padding: 35px 0 20px;
+  padding: 35px 0 76px;
 }
 
 .catalog__heading {
