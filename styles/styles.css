@@ -22,8 +22,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -45,7 +45,6 @@ body {
 /* Скрытые элементы */
 .visually-hidden {
   visibility: hidden;
-  margin: 0;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -552,16 +551,13 @@ body {
   color: #68a2ca;
 }
 
-.footer-link {
-  color: #000000;
-  text-decoration: none;
-}
-
 .contacts-phone {
   margin-right: 223px;
 }
 
 .footer-link {
+  color: #000000;
+  text-decoration: none;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
@@ -609,6 +605,8 @@ body {
 }
 
 .catalog-wrapper {
+  width: 1056px;
+  margin: 0 auto;
   padding: 35px 0 76px;
 }
 
@@ -679,11 +677,6 @@ body {
 .breadcrumbs__link:active {
   color: #ffffff;
   opacity: 0.3;
-}
-
-.catalog-wrapper {
-  width: 1056px;
-  margin: 0 auto;
 }
 
 .catalog-filter {
@@ -853,7 +846,7 @@ body {
   top: 48%;
   right: 158px;
   transform: translateY(-50%);
-  color: #aaa;
+  color: #aaaaaa;
   pointer-events: none;
 
   opacity: 0.3;
@@ -865,7 +858,7 @@ body {
   top: 48%;
   right: 17px;
   transform: translateY(-50%);
-  color: #aaa;
+  color: #aaaaaa;
   pointer-events: none;
 
   opacity: 0.3;
@@ -879,7 +872,7 @@ body {
 }
 
 .range-bar {
-  left: 0px;
+  left: 0;
   width: 227px;
   position: absolute;
   height: 4px;
@@ -922,13 +915,13 @@ body {
 }
 
 .catalog-filter-price__input {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   line-height: normal;
 
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   color: #ffffff;
   width: 144px;
   height: 48px;
@@ -936,11 +929,11 @@ body {
 
 .catalog-filter-price .input-from {
   padding: 0 17px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .catalog-filter-price .input-to {
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   padding: 0 17px;
   border-left: transparent;
   margin-left: -6px;
@@ -954,13 +947,13 @@ body {
 .catalog-filter-price .input-from:focus,
 .catalog-filter-price .input-to:focus {
   border: 2px solid #81b3d2;
-  outline: 2px solid #fff;
-  box-shadow: 0px 0px 0px 3px #81b3d2;
+  outline: 2px solid #ffffff;
+  box-shadow: 0 0 0 3px #81b3d2;
 }
 
 .catalog-filter-price .input-from:active,
 .catalog-filter-price .input-to:active {
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   background-color: #756257;
 }
 
@@ -1036,6 +1029,7 @@ body {
 
   cursor: pointer;
 }
+
 .catalog-filter__reset-button:hover {
   opacity: 0.6;
 }
@@ -1137,7 +1131,7 @@ body {
 }
 
 .active-view {
-  border: 2px solid #000;
+  border: 2px solid #000000;
 }
 
 .card-view-toggle:hover {
@@ -1653,8 +1647,9 @@ body {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
 }
+
 .number-input:active {
-  background-color: #fff;
+  background-color: #ffffff;
   outline: 3px solid #83b3d3;
 }
 
@@ -1674,9 +1669,11 @@ body {
 
   cursor: pointer;
 }
+
 .number-minus:hover {
   opacity: 1;
 }
+
 .number-minus:focus {
   opacity: 1;
 
@@ -1684,11 +1681,13 @@ body {
   outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
+
 .number-minus:active {
   background-repeat: no-repeat;
   outline: none;
   opacity: 0.2;
 }
+
 .number-plus {
   position: absolute;
   top: 15px;
@@ -1704,15 +1703,18 @@ body {
 
   cursor: pointer;
 }
+
 .number-plus:hover {
   opacity: 1;
 }
+
 .number-plus:focus {
   background-repeat: no-repeat;
   outline: 3px solid #83b3d3;
   border-radius: 4px;
   opacity: 1;
 }
+
 .number-plus:active {
   background-repeat: no-repeat;
   outline: none;
@@ -1844,8 +1846,6 @@ body {
 
 .tooltip-toggle {
   margin-right: 18px;
-
-  background-color: white;
   border: none;
   width: 25px;
   height: 25px;
