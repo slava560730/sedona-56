@@ -1158,7 +1158,7 @@ body {
     "image image image"
     "title title title"
     "type-housing type-housing min-price"
-    "details-button details-button favorite-button"
+    "details-button . favorite-button"
     "stars rating rating";
   grid-row-gap: 16px;
   padding: 20px 20px 20px 20px;
