@@ -178,7 +178,10 @@ body {
 }
 
 .navigation-site .navigation-list-item .active {
-  border-bottom: 2px solid #756257;
+  /* border-bottom: 2px solid #756257; */
+  text-decoration: underline;
+  text-underline-offset: 23px;
+  text-decoration-color: #756257;
 }
 
 .navigation-list__link:hover {
