@@ -1913,6 +1913,10 @@ body {
   color: #000000;
 }
 
+.input-wrapper {
+  position: relative;
+}
+
 .field-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2175,20 +2179,32 @@ body {
 }
 
 .invalid-text {
-  top: 50px;
-  left: 155px;
+  top: 52px;
+  left: 0;
   position: absolute;
   color: rgba(255, 87, 87, 1);
   font-size: 16px;
   line-height: 29px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  max-width: 400px;
 }
 
 .valid-text {
-  top: 50px;
-  left: 155px;
+  top: 48px;
+  left: 0;
   position: absolute;
   font-size: 16px;
   line-height: 29px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  max-width: 400px;
 }
 
 .tooltip-toggle {
