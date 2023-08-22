@@ -1,4 +1,3 @@
-let closeButton = document.querySelector(".modal-close-button");
 let modalContainer = document.querySelector(".modal-container");
 let modalButton = document.querySelector(".navigation-list__button");
 let hotelBooking = document.querySelector(
