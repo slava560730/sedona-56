@@ -455,10 +455,10 @@
               <div class="type-guests-adults">
                 <label class="adults-value modal-label">Взрослые:</label>
                 <div class="number-container">
-                  <button class="number-minus" type="button"></button>
+                  <button class="number-minus adult-minus" type="button"></button>
                   <label>
                     <input
-                      class="number-input"
+                      class="number-input adults"
                       type="number"
                       name="adult-number"
                       min="0"
@@ -466,7 +466,7 @@
                       readonly=""
                     />
                   </label>
-                  <button class="number-plus" type="button"></button>
+                  <button class="number-plus adult-plus" type="button"></button>
                 </div>
               </div>
 
@@ -498,10 +498,10 @@
                   </div>
                 </div>
                 <div class="number-container">
-                  <button class="number-minus" type="button"></button>
+                  <button class="number-minus child-minus" type="button"></button>
                   <label>
                     <input
-                      class="number-input"
+                      class="number-input childrens"
                       type="number"
                       id="childrens"
                       name="child-number"
@@ -509,7 +509,7 @@
                       value="1"
                       readonly=""
                   /></label>
-                  <button class="number-plus" type="button"></button>
+                  <button class="number-plus child-plus" type="button"></button>
                 </div>
               </div>
             </div>
@@ -519,5 +519,6 @@
       </div>
     </div>
     <script src="scripts/closeModal.js"></script>
+    <script src="scripts/changeInputValue.js"></script>
   </body>
 </html>
