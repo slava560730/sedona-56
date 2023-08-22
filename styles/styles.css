@@ -1275,6 +1275,7 @@ body {
   background-image: url("/images/icons/dropdown.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: #ffffff;
   padding: 11px 102px 10px 16px;
   border-radius: 4px;
   border: 2px solid #e6e6e6;
@@ -1762,6 +1763,7 @@ body {
   background-image: url("/images/icons/dropdown.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: #ffffff;
 
   padding: 12px 121px 13px 15px;
   border: 2px solid #e6e6e6;
