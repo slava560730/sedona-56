@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body>
+  <body class="catalog-page-container">
     <header class="main-header">
       <div class="page-container">
         <nav class="navigation">
@@ -240,12 +240,12 @@
                   </div>
                   <div class="range-scale">
                     <div class="range-bar">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden"
                           >Изменить минимальную цену.</span
                         >
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden"
                           >Изменить максимальную цену.</span
                         >
@@ -447,6 +447,9 @@
               </li>
             </ul>
             <div class="hotels-view-wrapper">
+              <label class="visually-hidden">
+                Выберите количество отображаемых гостиниц на страницею
+              </label>
               <p class="hotels-view">Гостиниц на странице:</p>
               <select
                 class="hotels-view-number"

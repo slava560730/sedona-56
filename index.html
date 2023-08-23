@@ -6,7 +6,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body>
+  <body class="main-page-container">
     <header class="main-header">
       <div class="page-container">
         <nav class="navigation">
@@ -421,44 +421,51 @@
               <label class="date-check-in modal-label" for="date-check-in"
                 >Дата заезда:</label
               >
-              <input
-                class="check-in-form-field field"
-                type="date"
-                id="date-check-in"
-                name="date-check-in"
-                min="2020-04-28"
-                max="2023-12-31"
-                value="2020-04-26"
-                required
-              />
-              <span class="invalid-text"
-                >Мы не можем отправить вас в прошлое.</span
-              >
+              <span class="input-wrapper">
+                <input
+                  class="check-in-form-field field"
+                  type="date"
+                  id="date-check-in"
+                  name="date-check-in"
+                  min="2020-04-28"
+                  max="2023-12-31"
+                  value="2020-04-26"
+                  required
+                />
+                <span class="invalid-text">
+                  Мы не можем отправить вас в прошлое.
+                </span>
+              </span>
             </p>
             <p class="field-group check-out">
-              <label class="date-check-out modal-label" for="date-check-out"
-                >Дата выезда:</label
-              >
-              <input
-                class="check-out-form-field field"
-                type="date"
-                id="date-check-out"
-                name="date-check-out"
-                value="2023-06-22"
-                required
-              />
-              <span class="valid-text"
-                >На эти даты есть свободные номера. Пока есть.</span
-              >
+              <label class="date-check-out modal-label" for="date-check-out">
+                Дата выезда:
+              </label>
+              <span class="input-wrapper">
+                <input
+                  class="check-out-form-field field"
+                  type="date"
+                  id="date-check-out"
+                  name="date-check-out"
+                  value="2023-06-22"
+                  required
+                />
+                <span class="valid-text">
+                  На эти даты есть свободные номера. Пока есть.
+                </span>
+              </span>
             </p>
             <div class="type-guests">
               <div class="type-guests-adults">
                 <label class="adults-value modal-label">Взрослые:</label>
                 <div class="number-container">
-                  <button class="number-minus" type="button"></button>
+                  <button
+                    class="number-minus adult-minus"
+                    type="button"
+                  ></button>
                   <label>
                     <input
-                      class="number-input"
+                      class="number-input adults"
                       type="number"
                       name="adult-number"
                       min="0"
@@ -466,7 +473,7 @@
                       readonly=""
                     />
                   </label>
-                  <button class="number-plus" type="button"></button>
+                  <button class="number-plus adult-plus" type="button"></button>
                 </div>
               </div>
 
@@ -498,10 +505,13 @@
                   </div>
                 </div>
                 <div class="number-container">
-                  <button class="number-minus" type="button"></button>
+                  <button
+                    class="number-minus child-minus"
+                    type="button"
+                  ></button>
                   <label>
                     <input
-                      class="number-input"
+                      class="number-input childrens"
                       type="number"
                       id="childrens"
                       name="child-number"
@@ -509,7 +519,7 @@
                       value="1"
                       readonly=""
                   /></label>
-                  <button class="number-plus" type="button"></button>
+                  <button class="number-plus child-plus" type="button"></button>
                 </div>
               </div>
             </div>
@@ -519,5 +529,6 @@
       </div>
     </div>
     <script src="scripts/closeModal.js"></script>
+    <script src="scripts/changeInputValue.js"></script>
   </body>
 </html>
